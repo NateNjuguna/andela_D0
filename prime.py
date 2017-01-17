@@ -14,4 +14,4 @@ def generate_prime_numbers(val):
 						break
 			if err is 1:
 				primes.append(x)
-		return primes
+		return primes if len(primes) > 0 else 'no primes'

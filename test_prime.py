@@ -27,3 +27,6 @@ class GeneratePrimeTest(unittest.TestCase):
 	def test_input_less_than_0(self):
 		with self.assertRaises(ValueError):
 			generate_prime_numbers(-1)
+	
+	def test_output_is_string_for_no_primes(self):
+		self.assertEquals(type(generate_prime_numbers(1)), type(''), msg="Expected string 'no primes' for no primes");
