@@ -20,3 +20,6 @@ class GeneratePrimeTest(unittest.TestCase):
 	def test_output_does_not_contain_number_one(self):
 		with self.assertRaises(ValueError):
 			generate_prime_numbers(50).index(1)
+			
+	def test_generate_prime_test_works(self):
+		self.assertEquals([2, 3, 5, 7], generate_prime_numbers(10), msg="generate prime test doesn't work as expected")

@@ -8,6 +8,8 @@ def generate_prime_numbers(val):
 			for y in range(1, x):
 				if x%y == 0:
 					err = err + 1
+					if err > 1 :
+						break
 			if err is 1:
 				primes.append(x)
 		return primes
