@@ -10,6 +10,7 @@ andela_D0$ pytest
 
 ## Asymptotic Analysis
 ### Python prime number generator
+*** Requires library big_o installed *** from [here](https://pypi.python.org/pypi/big_O/0.7)
 
 ```bash  
 $ cd analysis
