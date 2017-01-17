@@ -12,3 +12,7 @@ class GeneratePrimeTest(unittest.TestCase):
 	
 	def test_output_has_integers(self):
 		self.assertEquals(type(0), type(generate_prime_numbers(15)[2]), msg="Output list does not have integers")
+	
+	def test_output_has_only_positive_integers(self):
+		with self.assertRaises(ValueError):
+			generate_prime_numbers(50).index(-1)
