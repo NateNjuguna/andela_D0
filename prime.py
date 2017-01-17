@@ -1,3 +1,5 @@
+import big_o
+
 def generate_prime_numbers(val):
 	if type(val) is not type(0):
 		raise TypeError('Value is not an integer')
@@ -15,3 +17,11 @@ def generate_prime_numbers(val):
 			if err is 1:
 				primes.append(x)
 		return primes if len(primes) > 0 else 'no primes'
+
+generator = lambda n: big_o.datagen.n_(1000)
+best_case, other_cases = big_o.big_o(generate_prime_numbers, generator, n_repeats=100)
+
+for class_, residuals in other_cases.items():
+	print class_, '   (res: %.2G)' % residuals
+	
+print best_case
