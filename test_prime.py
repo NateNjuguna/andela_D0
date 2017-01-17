@@ -23,3 +23,7 @@ class GeneratePrimeTest(unittest.TestCase):
 			
 	def test_generate_prime_test_works(self):
 		self.assertEquals([2, 3, 5, 7], generate_prime_numbers(10), msg="generate prime test doesn't work as expected")
+		
+	def test_input_less_than_0(self):
+		with self.assertRaises(ValueError):
+			generate_prime_numbers(-1)

@@ -1,6 +1,8 @@
 def generate_prime_numbers(val):
 	if type(val) is not type(0):
-		raise TypeError('Value is not an integer');
+		raise TypeError('Value is not an integer')
+	elif val < 0:
+		raise ValueError('Value given is out of range')
 	else:
 		primes = []
 		for x in range(1, val+1):
