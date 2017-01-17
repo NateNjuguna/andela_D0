@@ -1,10 +1,11 @@
 # Day 0 of Andela Bootcamp XIV
+     Clone this repo using the link above
 ## Test Driven Development
 ### Python prime number generator
 
 ```bash
-$ cd prime
-prime$ pytest
+$ cd andela_D0
+andela_D0$ pytest
 ```
 
 ## Asymptotic Analysis
@@ -12,6 +13,6 @@ prime$ pytest
 
 ```bash  
 $ cd analysis
-prime$ pytest
+andela_D0$ python prime.py
 ```
 
